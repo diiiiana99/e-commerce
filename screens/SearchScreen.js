@@ -23,7 +23,7 @@ import {
   TouchableOpacity,
 } from 'react-native-gesture-handler';
 
-import sneakers from '../data/sneakers';
+import sneakers from '../database/sneakers';
 
 // https://www.creative-flyers.com
 
