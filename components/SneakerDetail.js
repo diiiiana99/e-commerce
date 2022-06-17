@@ -30,7 +30,6 @@ let deviceHeight = Dimensions.get('window').height;
 let deviceWidth = Dimensions.get('window').width;
 
 export default function SneakerDetail({navigation, route}) {
-    const buttonRef = React.useRef();
 
     const { item } = route.params
   return (

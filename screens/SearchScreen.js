@@ -11,6 +11,7 @@ import {
   SafeAreaView,
 } from 'react-native';
 import { SharedElement } from 'react-navigation-shared-element';
+import * as Animatable from 'react-native-animatable';
 
 
 
@@ -40,7 +41,19 @@ const bgs = ['#A5BBFF', '#DDBEFE', '#FF63ED', '#B98EFF'];
 let deviceHeight = Dimensions.get('window').height;
 
 
+const DURATION = 800
+const DELAY = 400
 
+const fadeInBottom = {
+    0: {
+        opacity: 0,
+        translateY: 100
+    },
+    1: {
+        opacity: 1,
+        translateY: 0
+    }
+}
 const OverflowItems = ({ data, scrollXAnimated }) => {
   const inputRange = [-1, 0, 1];
   const translateY = scrollXAnimated.interpolate({
@@ -55,11 +68,15 @@ const OverflowItems = ({ data, scrollXAnimated }) => {
         {data.map((item, index) => {
           return (
             <View key={index} style={styles.itemContainer}>
-              <Text style={[styles.title]} numberOfLines={1}>
+              <Animatable.Text  animation={fadeInBottom} 
+            duration={DURATION}
+            delay={DELAY + 300}  style={[styles.title]} numberOfLines={1}>
                 {item.title}
-              </Text>
+              </Animatable.Text>
               <View style={styles.itemContainerRow}>
-                <Text style={[styles.location]}>
+                <Animatable.Text animation={fadeInBottom} 
+            duration={DURATION}
+            delay={DELAY + 300}  style={[styles.location]}>
                   <EvilIcons
                     name='location'
                     size={16}
@@ -67,8 +84,10 @@ const OverflowItems = ({ data, scrollXAnimated }) => {
                     style={{ marginRight: 5 }}
                   />
                   {item.location}
-                </Text>
-                <Text style={[styles.date]}>{item.date}</Text>
+                </Animatable.Text >
+                <Animatable.Text animation={fadeInBottom} 
+            duration={DURATION}
+            delay={DELAY + 300}  style={[styles.date]}>{item.date}</Animatable.Text >
               </View>
             </View>
           );
@@ -131,7 +150,9 @@ export default function SearchScreen({navigation})  {
         }}
       >
         <SafeAreaView style={styles.container}>
-        <Text style={{fontWeight: '600', fontSize: 28, left: 95}}>New Releases</Text>
+        <Animatable.Text  animation={fadeInBottom} 
+            duration={DURATION}
+            delay={DELAY + 600}  style={{fontWeight: '600', fontSize: 28, left: 95}}>New Releases</Animatable.Text>
             
           <StatusBar hidden />
           {/* <Image

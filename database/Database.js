@@ -79,10 +79,10 @@ export const Items = [
   {
     id: 5,
     category: 'accessory',
-    productName: 'bRockerz 255 Pro+',
+    productName: 'Air Max 1',
     productPrice: 129,
     description:
-      'The unbeatable boAt signature sound shines through no matter what are you playing courtesy its 10mm drivers.',
+      'Built for big kids, the Nike Dunk Low GS ‘Black White’ showcases a simplistic two-tone color scheme that accentuates the sneaker’s clean lines, born from the same designer — Peter Moore — that also created the Air Jordan 1.',
     isOff: false,
     productImage: require('./images/accessories/boatrockerz1.png'),
     isAvailable: false,
@@ -98,7 +98,7 @@ export const Items = [
     productName: 'Nike Air Force 1 White',
     productPrice: 99,
     description:
-      'One Touch Control & Voice Assistant: With one multifunction button, you can play/pause, previous/next track and answer/hang-up calls.Voice assistant function lets you access siri/Google Assistant',
+      'Built for big kids, the Nike Dunk Low GS ‘Black White’ showcases a simplistic two-tone color scheme that accentuates the sneaker’s clean lines, born from the same designer — Peter Moore — that also created the Air Jordan 1.',
     isOff: false,
     productImage: require('./images/accessories/boultairbass1.png'),
     isAvailable: true,

@@ -10,12 +10,29 @@ import {
 } from 'react-native';
 import {COLOURS, Items} from '../database/Database';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import * as Animatable from 'react-native-animatable';
+
 
 
 
 
 
 const Home = ({navigation}) => {
+
+  const DURATION = 800
+  const DELAY = 400
+  
+  const fadeInBottom = {
+      0: {
+          opacity: 0,
+          translateY: 100
+      },
+      1: {
+          opacity: 1,
+          translateY: 0
+      }
+  }
+
   const [products, setProducts] = useState([]);
   const [accessory, setAccessory] = useState([]);
 
@@ -212,7 +229,10 @@ const Home = ({navigation}) => {
             padding: 16,
             alignItems: 'center',
           }}>
-          <Text
+          <Animatable.Text
+           animation={fadeInBottom}  
+           duration={DURATION}
+           delay={DELAY + 600}
             style={{
               fontSize: 26,
               color: COLOURS.black,
@@ -222,8 +242,11 @@ const Home = ({navigation}) => {
             
             }}>
             GOAT Shop &amp; Service 
-          </Text>
-          <Text
+          </Animatable.Text>
+          <Animatable.Text
+             animation={fadeInBottom}  
+             duration={DURATION}
+             delay={DELAY + 400}
             style={{
               fontSize: 14,
               color: COLOURS.black,
@@ -234,9 +257,13 @@ const Home = ({navigation}) => {
             }}>
               Sneaker Shop Located at  
 
-          </Text>
-          <Text >📍 530 Broadway, New York, NY</Text>
-          <Text style={{marginTop:2}}>Online Sneaker Shop for Everyone</Text>
+          </Animatable.Text>
+          <Animatable.Text     animation={fadeInBottom}  
+             duration={DURATION}
+             delay={DELAY + 300} >📍 530 Broadway, New York, NY</Animatable.Text>
+          <Animatable.Text     animation={fadeInBottom}  
+             duration={DURATION}
+             delay={DELAY + 300} style={{marginTop:2}}>Online Sneaker Shop for Everyone</Animatable.Text>
        
         </View>
         <View
