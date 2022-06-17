@@ -2,7 +2,7 @@ import * as React from 'react';
 import { StatusBar, Animated, Text, Image, View, StyleSheet, Dimensions,FlatList } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 const {width, height} = Dimensions.get('screen');
-import { RectButton } from '../components/Button';
+
 import { COLORS, SIZES, FONTS, SHADOWS } from "../constants";
 
 

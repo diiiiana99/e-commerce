@@ -6,7 +6,11 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { useFonts } from "expo-font";
-import Home from "./screens/Home";
+import Home from "./sc/Home";
+import ProductInfo from "./sc/ProductInfo";
+import MyCart from "./sc/MyCart";
+
+
 import Profile from "./screens/Profile";
 
 import SearchScreen from "./screens/SearchScreen";
@@ -16,7 +20,6 @@ import plus from './assets/plus.png'
 import SneakerDetail from "./components/SneakerDetail";
 
 
-import Details from "./screens/Details";
 import { Animated, Dimensions, Image, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import 'react-native-gesture-handler';
 import { FontAwesome5 } from '@expo/vector-icons'
@@ -59,10 +62,11 @@ const HomeScreen = () => {
             },
           }}
          component={Home} />
-               <Stack.Screen name="Profile" component={Profile} />
 
 
-      <Stack.Screen name="Details" component={Details} />
+      <Stack.Screen name="ProductInfo" component={ProductInfo} />
+      <Stack.Screen name="MyCart" component={MyCart} />
+
 
 
       
@@ -150,7 +154,7 @@ export default function App() {
               <FontAwesome5
                 name="home"
                 size={20}
-                color={focused ? 'red' : 'black'}
+                color={focused ? 'blue' : 'black'}
               ></FontAwesome5>
             </View>
           )
@@ -178,7 +182,7 @@ export default function App() {
               <FontAwesome5
                 name="search"
                 size={20}
-                color={focused ? 'red' : 'black'}
+                color={focused ? 'blue' : 'black'}
               ></FontAwesome5>
             </View>
           )
@@ -204,11 +208,11 @@ export default function App() {
               <View style={{
                 width: 55,
                 height: 55,
-                backgroundColor: 'red',
+                backgroundColor: 'blue',
                 borderRadius: 30,
                 justifyContent: 'center',
                 alignItems: 'center',
-                marginBottom: Platform.OS == "android" ? 50 : 30
+                marginBottom: Platform.OS == "android" ? 60 : 30
               }}>
                 <Image source={plus} style={{
                   width: 22,
@@ -223,7 +227,7 @@ export default function App() {
         <Tab.Screen name={"Notifications"} component={Notifications} options={{
           title: '',
           headerShown: false,
-          backgroundColor: 'red',
+          backgroundColor: 'blue',
 
           tabBarIcon: ({ focused }) => (
             <View style={{
@@ -234,7 +238,7 @@ export default function App() {
               <FontAwesome5
                 name="bell"
                 size={20}
-                color={focused ? 'red' : 'black'}
+                color={focused ? 'blue' : 'black'}
               ></FontAwesome5>
             </View>
           )
@@ -261,7 +265,7 @@ export default function App() {
               <FontAwesome5
                 name="user-alt"
                 size={20}
-                color={focused ? 'red' : 'black'}
+                color={focused ? 'blue' : 'black'}
               ></FontAwesome5>
             </View>
           )
@@ -282,7 +286,7 @@ export default function App() {
       <Animated.View style={{
         width: getWidth() - 20,
         height: 2,
-        backgroundColor: 'red',
+        backgroundColor: 'blue',
         position: 'absolute',
         bottom: 70,
         // Horizontal Padding = 20...
