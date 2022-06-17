@@ -172,7 +172,7 @@ export default function App() {
      </Indicator>
      <TouchableOpacity
       style={{
-        backgroundColor: '#001F2D',
+        backgroundColor: 'blue',
         padding: 15,
         borderRadius: 20,
         // padding: SIZES.small,
@@ -199,7 +199,7 @@ export default function App() {
     </TouchableOpacity>
     <TouchableOpacity
       style={{
-        backgroundColor: '#001F2D',
+        backgroundColor: 'blue',
         padding: 15,
         borderRadius: 20,
         // padding: SIZES.small,

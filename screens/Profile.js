@@ -34,16 +34,16 @@ const Profile = () => {
 
       <View style={styles.userInfoSection}>
         <View style={styles.row}>
-        <EvilIcons name='location' size={16} color='black' style={{ marginRight: 5 }}
+        <EvilIcons name='location' size={16} color='blue' style={{ marginRight: 5 }}
                   />
              <Text style={{color:"#777777", marginLeft: 20}}>New York,NY</Text>
         </View>
         <View style={styles.row}>
-        <Ionicons name='call-outline' size={16} color='black' style={{ marginRight: 5 }}/>
+        <Ionicons name='call-outline' size={16} color='blue' style={{ marginRight: 5 }}/>
         <Text style={{color:"#777777", marginLeft: 20}}>+(917)873-8511</Text>
         </View>
         <View style={styles.row}>
-        <Ionicons name='mail-outline' size={16} color='black' style={{ marginRight: 5 }}/>
+        <Ionicons name='mail-outline' size={16} color='blue' style={{ marginRight: 5 }}/>
         <Text style={{color:"#777777", marginLeft: 20}}>mike_law@gmail.com</Text>
         </View>
       </View>
@@ -65,31 +65,31 @@ const Profile = () => {
       <View style={styles.menuWrapper}>
         <TouchableRipple onPress={() => {}}>
           <View style={styles.menuItem}>
-          <Ionicons name='heart-outline' size={19} color='black' style={{ marginRight: 0 }}/>
+          <Ionicons name='heart-outline' size={19} color='blue' style={{ marginRight: 0 }}/>
             <Text style={styles.menuItemText}>Your Favorites</Text>
           </View>
         </TouchableRipple>
         <TouchableRipple onPress={() => {}}>
           <View style={styles.menuItem}>
-          <Ionicons name='card-outline' size={19} color='' style={{ marginRight: 0 }}/>
+          <Ionicons name='card-outline' size={19} color='blue' style={{ marginRight: 0 }}/>
             <Text style={styles.menuItemText}>Payment</Text>
           </View>
         </TouchableRipple>
         <TouchableRipple >
           <View style={styles.menuItem}>
-          <Ionicons name='share-outline' size={19} color='' style={{ marginRight: 0 }}/>
+          <Ionicons name='share-outline' size={19} color='blue' style={{ marginRight: 0 }}/>
             <Text style={styles.menuItemText}>Tell Your Friends</Text>
           </View>
         </TouchableRipple>
         <TouchableRipple onPress={() => {}}>
           <View style={styles.menuItem}>
-          <Ionicons name='share-outline' size={19} color='' style={{ marginRight: 0 }}/>
+          <Ionicons name='share-outline' size={19} color='blue' style={{ marginRight: 0 }}/>
             <Text style={styles.menuItemText}>Support</Text>
           </View>
         </TouchableRipple>
         <TouchableRipple onPress={() => {}}>
           <View style={styles.menuItem}>
-           <Ionicons name="settings-outline" color="black" size={19}/>
+           <Ionicons name="settings-outline" color="blue" size={19}/>
             <Text style={styles.menuItemText}>Settings</Text>
           </View>
         </TouchableRipple>

@@ -62,7 +62,7 @@ const OverflowItems = ({ data, scrollXAnimated }) => {
                   <EvilIcons
                     name='location'
                     size={16}
-                    color='black'
+                    color='blue'
                     style={{ marginRight: 5 }}
                   />
                   {item.location}

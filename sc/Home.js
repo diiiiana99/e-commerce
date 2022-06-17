@@ -6,16 +6,14 @@ import {
   ScrollView,
   TouchableOpacity,
   Image,
-  TextInput
+
 } from 'react-native';
 import {COLOURS, Items} from '../database/Database';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { COLORS, FONTS, SIZES, assets } from "../constants";
 
 
-// import Entypo from 'react-native-vector-icons/Entypo';
-// import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-// import FontAwesome from 'react-native-vector-icons/FontAwesome';
+
+
 
 const Home = ({navigation}) => {
   const [products, setProducts] = useState([]);
@@ -36,7 +34,7 @@ const Home = ({navigation}) => {
     let productList = [];
     let accessoryList = [];
     for (let index = 0; index < Items.length; index++) {
-      if (Items[index].category == 'product') {
+      if (Items[index].category == 'Air Jordan') {
         productList.push(Items[index]);
       } else if (Items[index].category == 'accessory') {
         accessoryList.push(Items[index]);
@@ -97,8 +95,8 @@ const Home = ({navigation}) => {
           <Image
             source={data.productImage}
             style={{
-              width: '80%',
-              height: '80%',
+              width: '100%',
+              height: '100%',
               resizeMode: 'contain',
             }}
           />
@@ -160,7 +158,7 @@ const Home = ({navigation}) => {
             </View>
           )
         ) : null}
-        <Text>&#8377; {data.productPrice}</Text>
+        <Text>$ {data.productPrice}</Text>
       </TouchableOpacity>
     );
   };
@@ -261,7 +259,7 @@ const Home = ({navigation}) => {
                   fontWeight: '500',
                   letterSpacing: 1,
                 }}>
-                Products
+                Air Jordan
               </Text>
               <Text
                 style={{
@@ -271,7 +269,7 @@ const Home = ({navigation}) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                41
+                21
               </Text>
             </View>
             <Text
@@ -317,7 +315,7 @@ const Home = ({navigation}) => {
                   fontWeight: '500',
                   letterSpacing: 1,
                 }}>
-                Accessories
+                All Sneakers
               </Text>
               <Text
                 style={{
@@ -327,7 +325,7 @@ const Home = ({navigation}) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                78
+                38
               </Text>
             </View>
             <Text

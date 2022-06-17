@@ -91,6 +91,7 @@ const ProductInfo = ({route, navigation}) => {
           height: 240,
           alignItems: 'center',
           justifyContent: 'center',
+          
         }}>
         <Image
           source={item}
@@ -98,6 +99,7 @@ const ProductInfo = ({route, navigation}) => {
             width: '100%',
             height: '100%',
             resizeMode: 'contain',
+          
           }}
         />
       </View>
@@ -109,7 +111,7 @@ const ProductInfo = ({route, navigation}) => {
       style={{
         width: '100%',
         height: '100%',
-        backgroundColor: COLOURS.white,
+        backgroundColor: 'white',
         position: 'relative',
       }}>
       <StatusBar
@@ -299,7 +301,7 @@ const ProductInfo = ({route, navigation}) => {
                   }}
                 />
               </View>
-              <Text> Rustaveli Ave 57,{'\n'}17-001, Batume</Text>
+              <Text> 24 Starr Street,{'\n'}Brooklyn,NY, {'\n'}11221</Text>
             </View>
             <Ionicons
               name="arrow-forward-outline"
@@ -321,10 +323,10 @@ const ProductInfo = ({route, navigation}) => {
                 color: COLOURS.black,
                 marginBottom: 4,
               }}>
-              &#8377; {product.productPrice}.00
+              $ {product.productPrice}.00
             </Text>
             <Text>
-              Tax Rate 2%~ &#8377;{product.productPrice / 20} (&#8377;
+              Tax Rate 2%~ ${product.productPrice / 20} ($
               {product.productPrice + product.productPrice / 20})
             </Text>
           </View>
@@ -344,7 +346,8 @@ const ProductInfo = ({route, navigation}) => {
           onPress={() => (product.isAvailable ? addToCart(product.id) : null)}
           style={{
             width: '86%',
-            height: '90%',
+            height: '80%',
+            marginBottom:10,
             backgroundColor: COLOURS.blue,
             borderRadius: 20,
             justifyContent: 'center',
