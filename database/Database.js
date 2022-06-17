@@ -13,7 +13,7 @@ export const Items = [
   {
     id: 1,
     category: 'Air Jordan',
-    productName: 'MI Super Bass Bluetooth Wireless Headphones',
+    productName: 'Air Jordon 1 Basketball Court',
     productPrice: 399,
     description:
       'Up to 20 hours battery life | Super powerful Bass | 40mm dynamic driver | Pressure less ear muffs | Bluetooth 5.0 | Voice control',

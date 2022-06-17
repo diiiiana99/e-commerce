@@ -19,7 +19,7 @@ const Profile = () => {
       <View style={styles.userInfoSection}>
         <View style={{flexDirection: 'row', marginTop: 15}}>
           <Avatar.Image
-             source={assets.person01}
+             source=''
             size={80}
           />
           <View style={{marginLeft: 20}}>

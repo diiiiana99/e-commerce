@@ -50,6 +50,7 @@ const OverflowItems = ({ data, scrollXAnimated }) => {
   return (
       
     <View style={styles.overflowContainer}>
+        
       <Animated.View style={{ transform: [{ translateY }] }}>
         {data.map((item, index) => {
           return (
@@ -130,6 +131,7 @@ export default function SearchScreen({navigation})  {
         }}
       >
         <SafeAreaView style={styles.container}>
+        <Text style={{fontWeight: '600', fontSize: 28, left: 95}}>New Releases</Text>
             
           <StatusBar hidden />
           {/* <Image

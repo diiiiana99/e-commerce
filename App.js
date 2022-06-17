@@ -1,14 +1,11 @@
 
 import React from "react";
-import {StatusBar} from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
-import { useFonts } from "expo-font";
-import Home from "./sc/Home";
-import ProductInfo from "./sc/ProductInfo";
-import MyCart from "./sc/MyCart";
+import Home from "./screens/Home";
+import ProductInfo from "./screens/ProductInfo";
+import MyCart from "./screens/MyCart";
 
 
 import Profile from "./screens/Profile";
@@ -20,7 +17,7 @@ import plus from './assets/plus.png'
 import SneakerDetail from "./components/SneakerDetail";
 
 
-import { Animated, Dimensions, Image, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Animated, Dimensions, Image, Platform, Text, TouchableOpacity, View } from 'react-native';
 import 'react-native-gesture-handler';
 import { FontAwesome5 } from '@expo/vector-icons'
 import { useRef } from 'react';
@@ -41,18 +38,15 @@ const Tab = createBottomTabNavigator();
 
 const HomeScreen = () => {
   return (
-
       <Stack.Navigator
-
       screenOptions={{
         headerShown: false,
-
         title: '',
         headerTintColor: '#757575',
         headerTransparent: true,
       }}
     >
-      <Stack.Screen  name="Home"  
+      <Stack.Screen name="Home"  
       options={{
             title: '',
             headerTintColor: '#757575',
@@ -62,14 +56,8 @@ const HomeScreen = () => {
             },
           }}
          component={Home} />
-
-
       <Stack.Screen name="ProductInfo" component={ProductInfo} />
       <Stack.Screen name="MyCart" component={MyCart} />
-
-
-
-      
     </Stack.Navigator> 
   )
 
