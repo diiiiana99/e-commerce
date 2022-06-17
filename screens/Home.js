@@ -232,9 +232,11 @@ const Home = ({navigation}) => {
               lineHeight: 24,
               
             }}>
-            Audio shop on Rustaveli Ave 57.
+              Sneaker Shop Located at  
+
           </Text>
-          <Text>This shop offers both products and services</Text>
+          <Text >📍 530 Broadway, New York, NY</Text>
+          <Text style={{marginTop:2}}>Online Sneaker Shop for Everyone</Text>
        
         </View>
         <View
