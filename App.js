@@ -6,17 +6,11 @@ import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import Home from "./screens/Home";
 import ProductInfo from "./screens/ProductInfo";
 import MyCart from "./screens/MyCart";
-
-
 import Profile from "./screens/Profile";
-
 import SearchScreen from "./screens/SearchScreen";
 import Notifications from "./screens/Notifications";
 import plus from './assets/plus.png'
-
 import SneakerDetail from "./components/SneakerDetail";
-
-
 import { Animated, Dimensions, Image, Platform, Text, TouchableOpacity, View } from 'react-native';
 import 'react-native-gesture-handler';
 import { FontAwesome5 } from '@expo/vector-icons'
@@ -77,36 +71,22 @@ const Search = () => {
       <Stack.Navigator
       headerMode='none' 
     >
- 
       <Stack.Screen name="SearchScreen" component={SearchScreen} />
       <Stack.Screen    name='SneakerDetail'
     component={SneakerDetail}
     options={() => options} />
-
-      
     </Stack.Navigator> 
   )
-
 }
+
+
 export default function App() {
   const tabOffsetValue = useRef(new Animated.Value(0)).current;
-
-  // const [loaded] = useFonts({
-  //   InterBold: require("./assets/fonts/Inter-Bold.ttf"),
-  //   InterSemiBold: require("./assets/fonts/Inter-SemiBold.ttf"),
-  //   InterMedium: require("./assets/fonts/Inter-Medium.ttf"),
-  //   InterRegular: require("./assets/fonts/Inter-Regular.ttf"),
-  //   InterLight: require("./assets/fonts/Inter-Light.ttf"),
-  // });
-
-  // if (!loaded) return null;
   return (
     <NavigationContainer theme={theme}>
-
       <Tab.Navigator tabBarOptions={{
         showLabel: false,
         headerShown: false,
-
         // Floating Tab Bar...
         style: {
           // backgroundColor: 'white',
@@ -123,16 +103,9 @@ export default function App() {
           paddingHorizontal: 20,
         }
       }}>
-
-        {
-          // Tab Screens....
-
-          // Tab ICons....
-        }
         <Tab.Screen name={"Home"} component={HomeScreen} options={{
             title: '',
             headerShown: false,
-
           tabBarIcon: ({ focused }) => (
             <View style={{
               // centring Tab Button...
@@ -158,7 +131,6 @@ export default function App() {
 
         <Tab.Screen name={"Search"} component={Search} options={{
           title: '',
-          
           headerShown: false,
 
           tabBarIcon: ({ focused }) => (
@@ -184,13 +156,12 @@ export default function App() {
           }
         })}></Tab.Screen>
 
-
         {
 
           // Extra Tab Screen For Action Button..
         }
- <Tab.Screen name={"ActionButton"} component={EmptyScreen} options={{
-          tabBarIcon: ({ focused }) => (
+            <Tab.Screen name={"ActionButton"} component={EmptyScreen} options={{
+            tabBarIcon: ({ focused }) => (
 
             <TouchableOpacity>
               <View style={{
@@ -268,7 +239,6 @@ export default function App() {
             }).start();
           }
         })}></Tab.Screen>
-
       </Tab.Navigator>
 
       <Animated.View style={{
@@ -285,9 +255,7 @@ export default function App() {
         ]
       }}>
 
-      </Animated.View>
-
-      
+      </Animated.View>      
   </NavigationContainer>
   );
 }
@@ -309,20 +277,8 @@ function EmptyScreen() {
   );
 }
 
-function SettingsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Settings!</Text>
-    </View>
-  );
-}
 
 
-function NotificationScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Notifications!</Text>
-    </View>
-  );
-}
+
+
 
