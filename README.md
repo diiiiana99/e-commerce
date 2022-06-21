@@ -1,6 +1,6 @@
 # E-Commerce
 
-# <img src='https://i.ibb.co/SvvjkrX/Simple-Mockup-Free-Scene-1.png' width='500'>
+# <img src='https://ibb.co/VBB1FmW' width='500'>
 
 Goat Shop front-end  application that consists:
      * Infrastructured with cross-platform technology using React-Native.
@@ -8,11 +8,9 @@ Goat Shop front-end  application that consists:
      * Executed commands and collaborated with project manager regarding MVC, diagrams, and achieving the goal of the day.
      * Built a showcase application with detailed information that increased the user visit and usage by 20%.
 
-
-
 # Demos:
 
-Full Video is at - https://youtu.be/wmqvXji233s
+Full Video is at - https://www.youtube.com/watch?v=BOaruHOH1fI&t=13s
 
 
 
