@@ -3,7 +3,7 @@
 # <img src='https://i.ibb.co/Njs3NTG/Scene.png' width='500' mrgin-left='90px'>
 
 
-Goat Shop front-end  application that consists:
+Goat Shop is a front-end  application that consists:
      * Infrastructured with cross-platform technology using React-Native.
      * Built 7 dynamic screens and navigation tabs. Utilized React-Native libraries and Async-storage to visualize data in the front-end.
      * Executed commands and collaborated with project manager regarding MVC, diagrams, and achieving the goal of the day.
