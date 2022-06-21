@@ -1,7 +1,6 @@
 # E-Commerce
 
-# <img src='https://i.ibb.co/Njs3NTG/Scene.png' width='500' mrgin-left='60px'>
-# <img src='https://i.ibb.co/Njs3NTG/Scene.png' width='500' mrgin-left='60px'>
+# <img src='https://i.ibb.co/Njs3NTG/Scene.png' width='500' mrgin-left='90px'>
 
 
 Goat Shop front-end  application that consists:
