@@ -1,6 +1,6 @@
 # E-Commerce
 
-# <img src='https://i.ibb.co/Njs3NTG/Scene.png' width='500'>
+# <img src='[https://i.ibb.co/Njs3NTG/Scene.png](https://i.ibb.co/HrQv5vx/goat.png)' width='500'>
 
 Goat Shop front-end  application that consists:
      * Infrastructured with cross-platform technology using React-Native.
